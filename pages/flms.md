@@ -1,5 +1,5 @@
 ---
-title: Transforming Multiple Sclerosis Research: Pioneering Practical and Precise Approaches with Federated Learning using Real-World Data
+title: Transforming Multiple Sclerosis Research - Pioneering Practical and Precise Approaches with Federated Learning using Real-World Data
 ---
 
 The paper titled "Transforming Multiple Sclerosis Research: Pioneering Practical and Precise Approaches with Federated Learning using Real-World Data" focuses on the application of Federated Learning (FL) to Multiple Sclerosis (MS) research using real-world clinical data. Here's a simplified explanation of the key points and findings:
