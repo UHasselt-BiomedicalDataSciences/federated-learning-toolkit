@@ -1,3 +1,4 @@
-- name: 
-  date: 
-  description: 
+- name: Federated Learning Toolkit (FLkit) is here!
+  date: 2024-12-16
+#  linked_pr:
+  description: First version of FLkit is here, hurra! Check it out at [FLkit](https://uhasselt-biomedicaldatasciences.github.io/federated-learning-toolkit/).

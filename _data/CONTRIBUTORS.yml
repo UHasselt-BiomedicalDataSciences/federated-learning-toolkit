@@ -1,0 +1,53 @@
+# List of contributors
+#
+# reference maintainers/contributors by their name used in contributors metadata section on the pages.
+# Extra metadata that is possible to add:
+# Full Name:
+#    git: github id
+#    email: email adress
+#    orcid: orcid id
+#    role: the role of the contributor
+#    affiliation: affiliation
+#    image_url: absolute path to image (default image from github)
+
+# Leads
+# TODO: Who are leads?
+
+# Editors:
+
+Goran Vinterhalter:
+    git: gvinterhalter
+    email: goran.vinterhalter@kuleuven.be
+    orcid: 0000-0002-3012-6048
+    role: editor
+    affiliation: KU Leuven
+Ashkan Pirmani:
+    git: ashkan-pirmani
+    email: ashkan.pirmani@kuleuven.be
+    orcid: 0000-0003-4549-1002
+    role: editor
+    affiliation: KU Leuven / University of UHasselt
+Axel Faes:
+    git: TheAxeC
+    email: axel.faes@uhasselt.be
+    orcid: 0000-0002-1637-255X
+    role: editor
+    affiliation: University of Hasselt
+
+# NOTE: Editors need to be added manually to editorial board in pages/about/editorial_board.md
+
+
+
+# Contributors:
+
+Muhammad Quamber Ali:
+    git: Quamber
+    email: muhammadquamber.ali@kuleuven.be
+#    orcid:
+    affiliation: KU Leuven
+
+Geert Vandeweyer:
+    git: geertvandeweyer
+    email: geert.vandeweyer@uantwerpen.be
+    orcid: 0000-0002-6262-6522
+    affiliation: UZA / University of Antwerp

@@ -5,17 +5,20 @@ The FLKit makes all of their materials publicly available under [open source][os
 The process documents and data are made available under a CC-BY license.
 Software are made available under an MIT license.
 
-The license text listed below (describing both CC-BY and MIT licenses as well as their usage in the FLKit) is reused under a CC-BY license from The Turing Way community materials.
+The license text listed below (describing both CC-BY and MIT licenses as well as their usage in the FLKit)
+is reused under a CC-BY license from The Turing Way community materials.
 Specifically from the [RDMKit license](https://github.com/elixir-europe/rdmkit/blob/master/LICENSE)
 Which in turn is based on [The Turing Way](https://github.com/alan-turing-institute/the-turing-way/blob/master/LICENSE.md)
 
 ## Process documents and data
 
-All documentation and chapter materials in this repository is licensed under a [Creative Commons Attribution 4.0 International License][cc-by-human].
+All documentation and chapter materials in this repository is licensed under a
+[Creative Commons Attribution 4.0 International License][cc-by-human].
 
 ## Software
 
-Except where otherwise noted, the software and infrastructure provided are made available under the [OSI][osi]-approved [MIT license][mit-license].
+Except where otherwise noted, the software and infrastructure provided are made available under the
+[OSI][osi]-approved [MIT license][mit-license].
 
 > Permission is hereby granted, free of charge, to any person obtaining
 > a copy of this software and associated documentation files (the

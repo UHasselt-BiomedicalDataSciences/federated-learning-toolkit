@@ -1,6 +1,12 @@
-- name: 
-  image_url: 
-  pid: 
+- name: VIB
+  image_url: /images/institutions/VIB-notagline-pos.svg
+  pid: https://ror.org/03xrhmk39
   expose: true
-  type: 
-  url: 
+  type: institution
+  url: https://www.psb.ugent.be/
+- name: ELIXIR Europe
+  image_url: /images/infrastructures/ELIXIR-logo.svg
+  pid:
+  expose: true
+  type: infrastructure
+  url: https://elixir-europe.org/

@@ -18,4 +18,14 @@ subitems:
   - title: Global Data Sharing Initiative
     url: /gdsi
 
+  - title: All tools and resources
+    description: Browse the RDMkit's catalogue of tools and resources for research data management.
+    url: /all_tools_and_resources
+    image_url: /assets/img/section-icons/cogs.svg
+    hr: True
+  - title: All training resources
+    description: Browse all training resources mentioned in RDMkit pages.
+    url: /all_training_resources
+    image_url: /assets/img/section-icons/training-icon.svg
+
   
