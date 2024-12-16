@@ -25,7 +25,7 @@ To make clear what is expected, we ask all members of the community to conform t
   - [3.2 What to do if someone is in physical danger](#32-what-to-do-if-someone-is-in-physical-danger)
   - [3.3 Code of Conduct enforcement](#33-code-of-conduct-enforcement)
 - [4 Enforcement manual](#4-enforcement-manual)
-  - [4.1 The FL Code of Conduct group](#41-the-rdm-code-of-conduct-group)
+  - [4.1 The FL Code of Conduct group](#41-the-fl-code-of-conduct-group)
   - [4.2 Urgent situations: acting unilaterally](#42-urgent-situations-acting-unilaterally)
   - [4.3 Less-urgent situations](#43-less-urgent-situations)
   - [4.4 Resolutions](#44-resolutions)
@@ -100,13 +100,13 @@ If a participant engages in behaviour that violates this Code of Conduct, any me
 ### 2.4 Feedback
 
 This Code of Conduct is not intended as a static set of rules by which everyone must abide.
-Rather, you are invited to make suggestions for updates or clarifications by contacting the [FL CoC Group](mailto:rdm-coc@elixir-europe.org) or by making a pull request to this document on GitHub.
+Rather, you are invited to make suggestions for updates or clarifications by contacting the [FL CoC Group](mailto:{{site.COC_EMAIL}}) or by making a pull request to this document on GitHub.
 
 ## 3 Incident reporting guidelines
 
 ### 3.1 Contact points
 
-If you feel able to, please contact the [FL CoC group](mailto:rdm-coc@elixir-europe.org).
+If you feel able to, please contact the [FL CoC group](mailto:{{site.COC_EMAIL}}).
 
 ### 3.2 What to do if someone is in physical danger
 
@@ -126,9 +126,7 @@ Enforcement of the Code of Conduct should be respectful and not include any hara
 
 The members of the FL Code of Conduct group are:
 
-* Carole Goble
-* Daniel Faria
-* Frederik Coppens
+* Lotte Geys
 
 As the community grows, we will seek to build a larger committee including members outside of the core development team.
 
