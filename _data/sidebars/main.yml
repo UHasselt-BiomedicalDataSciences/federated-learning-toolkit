@@ -1,9 +1,7 @@
 subitems:
-  - title: Home
-    url: /index
-  - title: Example page
-    url: /example_page
-  - title: FL  IBD
+#  - title: Home
+#    url: /index
+  - title: FL IBD
     url: /FL_IBD
   - title: Federated Learning Client
     url: /federated-learning-client

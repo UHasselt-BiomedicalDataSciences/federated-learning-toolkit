@@ -1,5 +1,7 @@
 ---
 title: Federated Learning Tutorial - Client
+contributors: [Axel Faes]
+search_exclude: false
 ---
 
 The `client.py` file defines the client-side logic for a federated learning setup using the Flower (FL) framework. Here's a detailed breakdown of the code:

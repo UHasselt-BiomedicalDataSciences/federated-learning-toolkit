@@ -1,5 +1,7 @@
 ---
 title: Federated Learning Tutorial - Server
+contributors: [Axel Faes]
+search_exclude: false
 ---
 
 The code in the file `server.py` is a server-side implementation for federated learning using the Flower (FL) framework. Here's a breakdown of the code:

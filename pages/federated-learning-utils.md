@@ -1,5 +1,7 @@
 ---
 title: Federated Learning Tutorial - Utilities
+contributors: [Axel Faes]
+search_exclude: false
 ---
 
 The `utils.py` file contains utility functions and classes to support the main federated learning process defined in the `server.py` file. Here is an explanation of its components:

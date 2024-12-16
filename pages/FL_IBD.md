@@ -1,5 +1,8 @@
 ---
-title: Tutorial running Federated Learning and Deep Learning models for predicting complex phenotypes 
+title: Tutorial running Federated Learning and Deep Learning models for predicting complex phenotypes
+contributors: [Muhammad Quamber Ali]
+page_id: fl_ibd
+search_exclude: false
 ---
 
 
