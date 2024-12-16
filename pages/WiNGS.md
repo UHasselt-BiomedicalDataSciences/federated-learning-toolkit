@@ -38,14 +38,14 @@ For these reasons, WiNGS was implemented to become a portal to aggregated genomi
 
 
 Data is structured in WiNGS as follows:
-- **Individual**: these are cinical cases, patients.
-- **Sample**: these are the experimental samples associated to individuals. (eg : WGS experiment, or SV experiment)
-- **Dataset**: These are the analysis files related to a sample. eg : GATK based SNV analysis on hg38 for WGS data. 
+- ** Individual **: these are cinical cases, patients.
+- ** Sample **: these are the experimental samples associated to individuals. (eg : WGS experiment, or SV experiment)
+- ** Dataset **: These are the analysis files related to a sample. eg : GATK based SNV analysis on hg38 for WGS data. 
 
 WiNGS is accessible as REST api, which is documented through [swagger](https://wings.esat.kuleuven.be/rest-api/api-docs/).  To perform an analysis, the following prerequisites are needed, which are performed through a web-based UI: 
 
-- **A user account** : to shield data, anonymous access is not allowed, register [here](https://wings.esat.kuleuven.be/Account/Register)
-- **An API key** : [Log in](https://wings-platform.org) and select user meny : Create API key , on the top right
+- ** A user account ** : to shield data, anonymous access is not allowed, register [here](https://wings.esat.kuleuven.be/Account/Register)
+- ** An API key ** : [Log in](https://wings-platform.org) and select user meny : Create API key , on the top right
 
 
 
@@ -78,6 +78,7 @@ Save the following script as WiNGS_api.py
 ```python
 #!/usr/bin/env python
 
+@title IMPORTS
 import getpass
 import requests
 import time
@@ -89,6 +90,7 @@ import hashlib
 import json
 %matplotlib inline
 
+@title GENERAL CLASSES
 #############
 ## CLASSES ##
 #############
@@ -172,10 +174,13 @@ class WingsApi:
            individual['samples'] = r
          return individual
 
-    def get_results(self,endpoint,arguments):
+    def get_results(self,endpoint,arguments,post=False):
         results = list()
         # first call : with cache
-        r = self.get(endpoint,arguments)
+        if post:
+          r = self.post(endpoint,arguments)
+        else:
+          r = self.get(endpoint,arguments)
         if r.get('status') == 'ready':
           results.extend(r['results'])
           # pages ?
@@ -184,7 +189,10 @@ class WingsApi:
             page += 1
             #print(f"Fetching page {page}...")
             arguments['page'] = page
-            r = self.get(endpoint,arguments)
+            if post:
+              r = self.post(endpoint,arguments)
+            else:
+              r = self.get(endpoint,arguments)
             results.extend(r['results'])
           return results
 
@@ -202,7 +210,10 @@ class WingsApi:
                 page += 1
                 print(f"Fetching page {page}...")
                 arguments['page'] = page
-                r = self.get(endpoint,arguments)
+                if post:
+                  r = self.post(endpoint,arguments)
+                else:
+                  r = self.get(endpoint,arguments)
                 results.extend(r['results'])
               return results
           raise ValueError(r)
@@ -220,7 +231,7 @@ class WingsApi:
 
         # not ready / cached: poll status
         for _ in tqdm(range(self.RETRY)):
-          r = api.get(endpoint,arguments,skip_cache=True)
+          r = self.get(endpoint,arguments,skip_cache=True)
           status = r.get("status")
           if status == "inprogress":
               time.sleep(self.SLEEP_SECONDS)
@@ -568,12 +579,12 @@ wes_variants = api.get_variant_results("/variant/discovery/query/results",{'requ
 
 We also provided the phenotype of our demo individual. This allows us to group data based on the presence of these hpo terms.  The results are : 
 
-| WGS
-| var+phen   | var-phen  | -var+phen  | -var-phen | 
-|------------|-----------|------------|-----------|
-|       0    |       2   |        7   |      460  |
+| WGS       |           |            |           |
+| var+phen  | var-phen  | -var+phen  | -var-phen | 
+|------------|-----------|------------|----------|
+|       0   |       2   |        7   |      460  |
  
-| WES
+|  WES      |          |           |          |
 |  var+phen | var-phen | -var+phen | -var-phen|
 |-----------|----------|-----------|----------|
 |        0  |       0  |        7  |      462 |
@@ -623,14 +634,15 @@ wgs_variants = api.get_variant_results("/variant/discovery/query/results",{'requ
 wes_variants = api.get_variant_results("/variant/discovery/query/results",{'request_id':wes['request_id']})
 
 ```
+
 The results are now: 
 
-|WGS
+|WGS       |          |           |          |
 | var+phen | var-phen | -var+phen | -var-phen|
 |----------|----------|-----------|----------|
-| 2        |       5  |       10  |      786 |
+|       2  |       5  |       10  |      786 |
 
-|WES
+|WES       |          |           |          |
 | var+phen | var-phen | -var+phen | -var-phen|
 |----------|----------|-----------|----------|
 |       1  |       0  |       11  |      791 |
@@ -652,12 +664,127 @@ result = api.post(endpoint,arguments)
 pprint.pprint(result)
 ```
 
-### 7. Querying Data : Structural variation
+### 7. Querying Data : Structural Variant 
  
-A second data type, next to SNV variants, are structural variants.  These can be queried using the following endpoints:
+## single sample
+A second data type, next to SNV variants, are structural variants.  Similar to SNVS, single samples can be queried in depth. However, for SVs, the filters are provided as part of the call: 
 
-**TODO**: This part of the demo is not yet complete.
+```python
+# list all samples with SVS: 
+endpoint = "SV_samples"
+sv_samples = api.get(endpoint,{"piid": piid, "host_id": 1})
+pprint.pprint(sv_samples[0:3])
+## 
+arguments = {"host_id" : 1,
+             "piid" : piid,
+             "individualID" : sv_samples[0]['IndividualID'],
+             "fileID" : sv_samples[0]['SampleFileID'],
+             "sv_type" : "DEL",
+             "sv_len" : ">1000"}
+svs = api.post('SV_samples/discovery',arguments)
+query_id = svs['request_id']['process_id']
+print(f"\nLaunched query as ID : {query_id}")
+# get results
+results = api.get_results("/SV_samples/discovery/results",{'request_id':query_id, 'host_id' : 1}, post=True)
+pprint.pprint(results)
+```
 
-=============================================================================================================
+## populations
+
+SV calling on WGS data often results in large amount of variants. A valuable approach is then to exclude variants based on a control population. This is done by using the `populations` endpoint:
+
+Populations are similar to datasets for SNV, and allow grouping of samples for analysis.  Listing your populations is done through the following call: 
+
+```python
+r = api.get('populations',{'host_id': 1,'piid' : piid})
+pprint.pprint(r['message'])
+```
+Assuming no populations are defined, we can create one for the demo samples:
+
+```python
+# create a population:
+r = api.post('newPopulation',{'host_id': 1, 'piid': piid, 'population_name': 'demo_samples', 'description':'demo_population', 'seqType': 'WGS'})
+# get the population ID
+r = api.get('populations',{'host_id': 1,'piid' : piid},skip_cache=True)
+population_id = None
+for p in r['message']:
+  if p['Description'] == 'demo_population':
+    population_id = p['PopulationID']
+    break
+# then, add samples with "demo" in the IndividualLocalID.
+data = {
+         "host_id": 1,
+         "piid": piid,
+         "PopulationID": population_id,
+         "individualsAndSamples": []
+       }
+for s in sv_samples:
+  if 'demo' in s['IndividualLocalID'].lower():
+    data['individualsAndSamples'].append({
+      "individualID": s['IndividualID'],
+      "fileID": s['SampleFileID']
+    })
+r = api.post('population/addIndividualSample',data)
+```
+
+Next, we can investigate the effect by repeating the single sample query in context of the population.
+
+```python
+endpoint = 'population/populationFileFiltering'
+data = {
+  "PopulationID": population_id,
+  "fileID_to_filter": sv_samples[0]['SampleFileID'],
+  "host_id": 1,
+  "sv_type" : "DEL",
+  "sv_len" : ">1000"
+}
+r = api.post(endpoint,data)
+request_id = r['request_id']['process_id']
+
+# get results
+endpoint = 'population/populationFileFiltering/results'
+data = {'host_id': 1, request_id: request_id}
+results = api.get_results(endpoint,data, post=True)
+pprint.pprint(results)
+```
+In this case, we see that the that number of retained variants decreased significantly.
+
+
+
+## Cross-node queries
+
+Finally, we can also execute cross-node queries, similar to the variant frequency queries in SNV analysis. For instance, we could investigate if the WiNGS populations contain potentially relevant SV events in the PUF60 gene, identified in the previous section. We do not restrict the query on variant size or type, only on the gene and ACMG class:
+
+```python
+endpoint = 'SVvariant/discovery/query'
+data = {
+  'host_id' : 1,
+  'ref_build_type' : 'hg38',
+  'seq_type' : 'WGS',
+  'gene' : 'PUF60',
+  'ACMG_class' : 3,
+  'hpo_list':  [x['HPOID'] for x in individual['phenotype']]
+
+}
+r = api.post(endpoint,data)
+request_id = r['message']['request_id']
+
+# get results
+endpoint = 'SVvariant/discovery/query/results'
+data = {'request_id': request_id}
+results = api.get_results(endpoint,data, post=True)
+pprint.pprint(results)
+```
+
+The results follow the same structure as the variant frequency analysis.
+
+| var+phen | var-phen | -var+phen | -var-phen|
+|----------|----------|-----------|----------|
+|       1  |       20 |       15  |      125 |
+
+
+## Conclusion
+
+The WiNGS api offers standardized interaction with federated genomics data. This tutorial has covered the basic usage of the api. For more detailed information, please refer to the [documentation](https://wings.esat.kuleuven.be/rest-api/api-docs/).
 
 
