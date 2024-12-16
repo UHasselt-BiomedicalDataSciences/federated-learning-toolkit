@@ -114,19 +114,19 @@ template you have to:
    file.
 
 1. Click "Raw" on the GitHub page to open the file 'as is'
-   {% include image.html file="raw_github.png" inline=true alt="Raw button GitHub." %}
+   {% include image.html file="contribute/github/raw_github.png" inline=true alt="Raw button GitHub." %}
 
 1. Select and copy all the content.
 
 1. Go back to the main section were you want to make the new page, in our example this will be in */pages/your_tasks*.
    Click on `Add file` on the right followed up by `Create new file`.
-   {% include image.html file="create_new_file_github.png" inline=true alt="Create new file GitHub." %}
+   {% include image.html file="contribute/github/create_new_file_github.png" inline=true alt="Create new file GitHub." %}
 
 1. Paste the copied content from the template.
 
 1. Name the file by choosing a unique self explaining short name without capitals and without spaces (replace them with
    underscores).
-   {% include image.html file="name_file_github.png" inline=true alt="Name the file in GitHub." %}
+   {% include image.html file="contribute/github/name_file_github.png" inline=true alt="Name the file in GitHub." %}
 
 1. Check the [frontmatter/metadata](page_metadata) of the markdown page:
     - delete `search_exclude: true` attribute.
@@ -135,7 +135,7 @@ template you have to:
 
 1. Describe shortly which changes you made in the description of your commit below the page. Commit to a new branch and
    click `Commit new file`.
-   {% include image.html file="commit_to_master_github.png" inline=true alt="Commit new file in GitHub." %}
+   {% include image.html file="contribute/github/commit_to_master_github.png" inline=true alt="Commit new file in GitHub." %}
 
 1. Wait till another editor approves your changes. After approval, the branch can be merged and changes will be applied.
 

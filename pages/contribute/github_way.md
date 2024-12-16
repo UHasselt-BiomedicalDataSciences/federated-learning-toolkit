@@ -44,7 +44,7 @@ Before starting editing on GitHub:
     * If you want to contribute to an existing page, go to the page on the site and click the “Edit me” pencil icon <i class="fa-solid fa-pencil text-primary"></i> next to the page title
     * If you want to create a new page, the editors will provide a link to the page as a comment in your GitHub issue. The page will come with a predefined template based on the kind of content you want to contribute.
 2. You will be taken to the correct GitHub repository, where you will look for a pencil icon on the top right.
-   {% include image.html file="raw_github.png" inline=true alt="Editing a page on GitHub" %}
+   {% include image.html file="contribute/github/raw_github.png" inline=true alt="Editing a page on GitHub" %}
 
 
 ## Linking resources and other pages (optional)
@@ -57,12 +57,12 @@ Before starting editing on GitHub:
 ## Submit your first draft
 
 1. When you are happy with your first draft, go to the “Propose changes” section at the end of the page and write a title and a brief explanation of your changes.
-    {% include image.html file="propose_changes_github.png" inline=true alt="Propose changes on GitHub" %}
+    {% include image.html file="contribute/github/propose_changes_github.png" inline=true alt="Propose changes on GitHub" %}
 2. Click “Propose changes”. 
 3. Create a pull request following [GitHub's documentation](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
-    {% include image.html file="draft_pullrequest_github.png" inline=true alt="PrDraft pull request on GitHub" %}
+    {% include image.html file="contribute/github/draft_pullrequest_github.png" inline=true alt="PrDraft pull request on GitHub" %}
 4. In the description of your pull request, link the issue related to this change by typing a hashtag # and the issue number. Suggestions will appear.
-    {% include image.html file="linking_issues_github.png" inline=true alt="Linking issues in a pull request on GitHub" %}
+    {% include image.html file="contribute/github/linking_issues_github.png" inline=true alt="Linking issues in a pull request on GitHub" %}
 {% include callout.html type="tip" content="You can create a draft pull request when you're not ready to submit and will need to work more on it later. You can find more information about draft pull requests in the [GitHub documentation](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests#draft-pull-requests)" %}
 {% capture callout_content_2 %}
 You can return to your pull request by going to the [pull request section]({{site.REPO}}/pulls) of our GitHub repo.
@@ -74,9 +74,9 @@ You can return to your pull request by going to the [pull request section]({{sit
 When editors add comments or add a review of your pull request, you will be notified. To address comments, you must edit your pull request:
 1. Go to your pull request. You can return to it by going to the [pull request section]({{site.REPO}}/pulls) of our GitHub repo
 2. * Click on "Files changed" in the top menu bar.
-     {% include image.html file="files_changed_github.png" inline=true alt="Files changed tab on GitHub" %}
+     {% include image.html file="contribute/github/files_changed_github.png" inline=true alt="Files changed tab on GitHub" %}
    * Click on the icon with 3 dots "..." of the file you  want to edit and then click on "Edit file".
-     {% include image.html file="3_dots_github.png" inline=true alt="File change options on GitHub" %}
+     {% include image.html file="contribute/github/3_dots_github.png" inline=true alt="File change options on GitHub" %}
    * Make your changes.
    * Click on “Commit changes”.
 

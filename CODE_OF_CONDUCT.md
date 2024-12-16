@@ -11,7 +11,7 @@ Accordingly, everyone who participates in the FLkit is expected to show respect 
 All project members, are dedicated to a ***harassment-free experience for everyone***, regardless of gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, age or religion. **We do not tolerate harassment by and/or of members of our community in any form**.
 
 We are particularly motivated to support new and/or anxious collaborators, people who are looking to learn and develop their skills, and anyone who has experienced discrimination in the past.
-
+,
 To make clear what is expected, we ask all members of the community to conform to the following Code of Conduct.
 
 - [1 Introduction](#1-introduction)

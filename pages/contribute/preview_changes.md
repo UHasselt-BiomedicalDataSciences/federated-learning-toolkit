@@ -16,19 +16,19 @@ As an editor with editing rights, changes made by clicking on the pencil icon wi
 
 Click on the 'fork' button in the top right corner to find out. If a fork is present under your personal GitHub ID, click on it. 
 
-{% include image.html file="your_own_fork.png" alt="Your own fork" %}
+{% include image.html file="contribute/github/your_own_fork.png" alt="Your own fork" %}
 
 
 Make sure you are in the `main` branch of your fork, seen in the left top corner.
 
-{% include image.html file="change_branch.png" alt="Change branch on GitHUb" %}
+{% include image.html file="contribute/github/change_branch.png" alt="Change branch on GitHUb" %}
 
 
 ### 2. Make sure your fork is up to date
 
 Click on the 'sync fork' button to ensure you have the latest changes of the main branch in your fork. 'Update branch'.
 
-{% include image.html file="sync_branch.png" alt="Click on the sync fork button." %}
+{% include image.html file="contribute/github/sync_branch.png" alt="Click on the sync fork button." %}
 
 
 ### 3. Make changes
@@ -39,7 +39,7 @@ You can go to a folder and create a new file, or edit an existing file. See [Con
 
 This step is important. Make sure to commit to a new feature branch which you name in a logical way. 
 
-{% include image.html file="commit_new_branch.png" alt="Propose changes on GitHub" %}
+{% include image.html file="contribute/github/commit_new_branch.png" alt="Propose changes on GitHub" %}
 
 
 ## Preview your changes using GitHub Actions
@@ -48,19 +48,19 @@ This step is important. Make sure to commit to a new feature branch which you na
 - Go to Environments > github-pages and remove the rule under Deployment branches if you want to deploy other branches than master via Workflow Dispatch (manually triggered action)
 - Enable GitHub Actions (and use Workflow Dispatch)
 
-{% include image.html file="deploy_using_gh_actions.png" alt="Got to the settings tab in your repo to enable GitHub pages" %}
+{% include image.html file="contribute/github/deploy_using_gh_actions.png" alt="Got to the settings tab in your repo to enable GitHub pages" %}
 
 
 ## Open a Pull Request (PR) with your changes
 
 Got to your newly created branch and click 'Contribute'. This will create a PR for the main repository.
 
-{% include image.html file="create_pr_from_fork.png" alt="Create new PR from fork." %}
+{% include image.html file="contribute/github/create_pr_from_fork.png" alt="Create new PR from fork." %}
 
 You can always make changes after the creation of this pull request by going to the files changed tab 
 
-{% include image.html file="files_changed_github.png" alt="Files changed tab on GitHub" %}
+{% include image.html file="contribute/github/files_changed_github.png" alt="Files changed tab on GitHub" %}
 
 and clicking on the 3 dots to edit the file again. Changes made this way will become visible in your preview automatically after a few minutes.
 
-{% include image.html file="3_dots_github.png" alt="File change options on GitHub" %}
+{% include image.html file="contribute/github/3_dots_github.png" alt="File change options on GitHub" %}
