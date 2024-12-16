@@ -1,6 +1,8 @@
 subitems:
 #  - title: Home
 #    url: /index
+  - title: WiNGS
+    url: /WiNGS
   - title: FL IBD
     url: /FL_IBD
   - title: Federated Learning Client
