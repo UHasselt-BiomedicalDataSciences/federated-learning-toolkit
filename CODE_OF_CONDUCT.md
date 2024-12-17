@@ -33,7 +33,7 @@ To make clear what is expected, we ask all members of the community to conform t
 
 ## 1 Introduction
 
-The FLkit is a community-oriented and -led project under the auspices of the ELIXIR Research Infrastructure.
+The FLkit is a community-oriented and led project under the auspices of the ELIXIR Research Infrastructure.
 We value the involvement of everyone in the community.
 We are committed to creating a friendly and respectful place for learning, teaching and contributing.
 All participants in our in-person events and online communications are expected to show respect and courtesy to others at all times.
@@ -41,7 +41,7 @@ All participants in our in-person events and online communications are expected 
 To make clear what is expected, everyone participating in activities associated with the FLkit is required to conform to this Code of Conduct.
 This Code of Conduct applies to all spaces managed by the FLkit including, but not limited to, in-person focus groups and workshops, and communications online via GitHub. For events ELIXIR operates a [Code of Conduct](https://elixir-europe.org/events/code-of-conduct).
 
-For issues around Code of Conduct please contact <{{site.COC_EMAIL}}>.
+For issues around Code of Conduct please contact <lotte.geys@uhasselt.be>.
 
 Reports will be reviewed by the FL CoC group, unless there is a conflict of interest, and will be kept confidential.
 
@@ -100,13 +100,13 @@ If a participant engages in behaviour that violates this Code of Conduct, any me
 ### 2.4 Feedback
 
 This Code of Conduct is not intended as a static set of rules by which everyone must abide.
-Rather, you are invited to make suggestions for updates or clarifications by contacting the [FL CoC Group](mailto:{{site.COC_EMAIL}}) or by making a pull request to this document on GitHub.
+Rather, you are invited to make suggestions for updates or clarifications by contacting the [FL CoC Group](mailto:lotte.geys@uhasselt.be) or by making a pull request to this document on GitHub.
 
 ## 3 Incident reporting guidelines
 
 ### 3.1 Contact points
 
-If you feel able to, please contact the [FL CoC group](mailto:{{site.COC_EMAIL}}).
+If you feel able to, please contact the [FL CoC group](mailto:lotte.geys@uhasselt.be).
 
 ### 3.2 What to do if someone is in physical danger
 

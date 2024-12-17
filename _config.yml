@@ -11,7 +11,7 @@ description: "Best practices and guidelines you can use when applying Federated 
 REPO: https://github.com/UHasselt-BiomedicalDataSciences/federated-learning-toolkit
 WEBSITE: https://uhasselt-biomedicaldatasciences.github.io/federated-learning-toolkit
 EMAIL: lotte.geys@uhasselt.be
-# code of conduct email
+# NOTE: code of conduct email (COC_EMAIL) is hardcoded in CODE_OF_CONDUCT.md (it needs to be changed there manually)
 COC_EMAIL: lotte.geys@uhasselt.be
 
 # For referencing to RDMkit
