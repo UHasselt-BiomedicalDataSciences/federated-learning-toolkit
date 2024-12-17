@@ -1,13 +1,107 @@
-<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141 141" width="141" height="141">
-	<title>_main_logo-svg</title>
-	<style>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.2"
+   viewBox="0 0 141 141"
+   width="141"
+   height="141"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs1">
+    <marker
+       style="overflow:visible"
+       id="ArrowWideHeavy"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       markerWidth="4"
+       markerHeight="4"
+       viewBox="0 0 1 1"
+       preserveAspectRatio="xMidYMid"
+       markerUnits="userSpaceOnUse">
+      <path
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="m 1,0 -3,3 h -2 l 3,-3 -3,-3 h 2 z"
+         id="path3" />
+    </marker>
+  </defs>
+  <title
+     id="title1">_main_logo-svg</title>
+  <style
+     id="style1">
 		.s0 { fill: #2a2e3d } 
 		.s1 { fill: none;stroke: #6536c2;stroke-linecap: round;stroke-miterlimit:100;stroke-width: 10 } 
 		.s2 { fill: none;stroke: #ffffff;stroke-miterlimit:100;stroke-width: 10 } 
 		.s3 { fill: none;stroke: #6536c2;stroke-miterlimit:100;stroke-width: 10 } 
 	</style>
-	<path id="circle" class="s0" d="m70.5 141c-39 0-70.5-31.5-70.5-70.5 0-39 31.5-70.5 70.5-70.5 39 0 70.5 31.5 70.5 70.5 0 39-31.5 70.5-70.5 70.5z"/>
-	<path id="connect" class="s1" d="m55.3 104.9l25-28.5m11.3-0.8l17.1 20.5m-17.8-31.2l23.5-15.1"/>
-	<path id="FL" fill-rule="evenodd" class="s2" d="m51.6 24.2c0-4-3.4-7.3-7.6-7.3-4.3 0-7.7 3.3-7.7 7.3 0 4.1 3.4 7.4 7.7 7.4 4.2 0 7.6-3.3 7.6-7.4zm45.4-0.1c0-4.5-3.7-8.1-8.3-8.1-4.6 0-8.4 3.6-8.4 8.1 0 4.4 3.8 8 8.4 8 4.6 0 8.3-3.6 8.3-8zm-46.6 43.6c0-3.3-2.8-6-6.2-6-3.4 0-6.2 2.7-6.2 6 0 3.3 2.8 5.9 6.2 5.9 3.4 0 6.2-2.6 6.2-5.9zm5.7 43.7c0-6.4-5.4-11.6-12.1-11.6-6.6 0-12 5.2-12 11.6 0 6.4 5.4 11.6 12 11.6 6.7 0 12.1-5.2 12.1-11.6zm-5-44h24.1m-31.1 34.9v-27.7m0-12.4v-32.7m10.1-5.4h30.8"/>
-	<path id="center" fill-rule="evenodd" class="s3" d="m84.6 76.7c-4.3 0-7.7-3.3-7.7-7.5 0-4.1 3.4-7.5 7.7-7.5 4.3 0 7.8 3.4 7.8 7.5 0 4.2-3.5 7.5-7.8 7.5z"/>
+  <path
+     id="circle"
+     class="s0"
+     d="M 70.5,141 C 51.284427,141 27.703539,138.42326 15,126 1.9203886,113.20897 0,90.284427 0,70.5 0,49.974612 1.0486322,27.872061 15,15 27.557429,3.4140387 52.025388,0 70.5,0 c 19.603121,0 42.73449,2.1308259 55.5,15 12.6312,12.733779 15,36.103121 15,55.5 0,19.745839 -1.96527,43.32115 -15,56.10693 C 113.28984,139.07435 89.754161,141 70.5,141 Z" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#6536c2;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+     d="M 52.691492,106.22068 78.028897,76.809063"
+     id="path40-0" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#6536c2;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:100000;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ArrowWideHeavy)"
+     d="m 88.82121,76.240474 31.95068,29.891946"
+     id="path41-9" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#6536c2;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ArrowWideHeavy)"
+     d="M 90.12483,67.266659 125.30385,49.011817"
+     id="path44" />
+  <g
+     id="g46"
+     transform="matrix(0.90579346,0,0,0.88410351,21.569825,8.8108499)"
+     style="stroke:#ffffff;stroke-opacity:1">
+    <path
+       d="m 75.557686,33.9 c -7.7,0 -13.9,-6 -13.9,-13.4 0,-7.5 6.2,-13.5 13.9,-13.5 7.7,0 14,6 14,13.5 0,7.4 -6.3,13.4 -14,13.4 z"
+       id="path5-8-7"
+       style="fill:none;stroke:#ffffff;stroke-width:7;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:7;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="m 23.948527,106.10008 -0.0032,-29.053951"
+       id="path35" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:7;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="m 23.945331,63.946473 0.0032,-30.046553"
+       id="path36" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:7;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="M 37.899907,20.45 H 61.657778"
+       id="path37" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:7;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       d="m 30.694029,70.455788 28.47121,-0.170897"
+       id="path38" />
+    <path
+       d="m 23.894628,77.046301 c -3.7,0 -6.7,-2.9 -6.7,-6.5 0,-3.7 3,-6.6 6.7,-6.6 3.8,0 6.8,2.9 6.8,6.6 0,3.6 -3,6.5 -6.8,6.5 z"
+       id="path8-6"
+       style="fill:none;stroke:#ffffff;stroke-width:7;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       d="M 23.9,133 C 16.2,133 10,127 10,119.6 c 0,-7.5 6.2,-13.5 13.9,-13.5 7.7,0 14,6 14,13.5 0,7.4 -6.3,13.4 -14,13.4 z"
+       id="path5"
+       style="fill:none;stroke:#ffffff;stroke-width:7;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       d="M 23.9,33.9 C 16.2,33.9 10,27.9 10,20.5 10,13 16.2,7 23.9,7 c 7.7,0 14,6 14,13.5 0,7.4 -6.3,13.4 -14,13.4 z"
+       id="path5-8"
+       style="fill:none;stroke:#ffffff;stroke-width:7;stroke-dasharray:none;stroke-opacity:1" />
+  </g>
+  <path
+     d="m 82.869473,78.606427 c -4.4,-0.2 -7.9,-3.7 -7.7,-8 0.1,-4.3 3.8,-7.6 8.2,-7.4 4.4,0.1 7.8,3.7 7.7,7.9 -0.2,4.3 -3.8,7.6 -8.2,7.5 z"
+     id="path7-0-2"
+     style="fill:none;stroke:#6536c2;stroke-width:7;stroke-dasharray:none;stroke-opacity:1" />
+  <metadata
+     id="metadata2">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>_main_logo-svg</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
 </svg>

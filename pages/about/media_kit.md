@@ -37,6 +37,8 @@ For use in presentations, tutorials and all other RDMkit related activities the 
      [<a href="{{ 'assets/img/FLkit_logo_condensed.png' | relative_url }}">png</a>]
 </p>
 
+{% comment %}
+TODO: invert once we have the final logo
 #### FLkit logo condensed inverted
 
 <p>
@@ -44,3 +46,4 @@ For use in presentations, tutorials and all other RDMkit related activities the 
     [<a href="{{ 'assets/img/FLkit_logo_condensed_inverted.svg' | relative_url }}">svg</a>]
      [<a href="{{ 'assets/img/FLkit_logo_condensed_inverted.png' | relative_url }}">png</a>] 
 </p>
+{% endcomment %}

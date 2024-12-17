@@ -1,6 +1,8 @@
 #!/bin/bash
 
- convert all FLkit_logo*.svg to png
+cp FLkit_logo_inverted.svg main_logo.svg
+
+convert all FLkit_logo*.svg to png
 sips -s format png FLkit_logo.svg --out  FLkit_logo.png --resampleWidth 2760 --resampleHeight 1024
 sips -s format png FLkit_logo_inverted.svg --out  FLkit_logo_inverted.png --resampleWidth 2760 --resampleHeight 1024
 sips -s format png FLkit_logo_condensed.svg --out  FLkit_logo_condensed.png --resampleWidth 1024 --resampleHeight 1024
