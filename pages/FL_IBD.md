@@ -18,7 +18,7 @@ This tutorial will guide you through the process of predicting complex phenotype
 4. Setting Up the Federated Learning Repository
 5. Initiating the Simulation
 
-## 1. Understanding Genetic Data and VCF Files
+## Understanding Genetic Data and VCF Files
 
 Genetic data is usually provided in Variant Call Format (VCF) files. These files contain information about genetic variants, including the position, reference, and alternate alleles, as well as additional annotations. VCF files are commonly used in genomic research to store and share genetic variant data.
 
@@ -78,11 +78,11 @@ By adding these annotations, Annovar helps researchers understand the potential 
    perl .../annovar/table_annovar.pl VCFFILE .../annovar/humandb/ -out OUTPUT -vcfinput -buildver hg19 -protocol refGene,dbnsfp42a -operation gxf -xreffile XREFFILE
    
    
-## 3. Converting Genetic Annotations to Vector Representations
+## Converting Genetic Annotations to Vector Representations
 
 This section details the data processing steps performed for the FedCrohn project. The process involves working with gene dictionaries, label processing, and feature extraction from annotated VCF files.
 
-#### 1. Gene Dictionary
+#### Gene Dictionary
 
 The file `genesdictRefGeneAnnovarComplete_withoutzerogenes.rtf` contains a dictionary of genes, which serves as a reference for identifying whether a gene being processed is present in the list or not. An example excerpt from the file is:
 
@@ -99,7 +99,7 @@ The file `genesdictRefGeneAnnovarComplete_withoutzerogenes.rtf` contains a dicti
 
 This dictionary is used to verify the presence of genes during the data processing steps.
 
-#### 2. Label Processing
+#### Label Processing
 
 The labels for the samples are processed based on their identifiers. The code snippet for processing the labels is as follows:
 
@@ -116,7 +116,7 @@ In this context:
 
 This labeling helps distinguish between different types of samples in the dataset.
 
-#### 3. Feature Extraction from Annotated VCF Files
+#### Feature Extraction from Annotated VCF Files
 
 The core of the data processing involves iterating over each of the processed files, passing them to the `parseAnnovarIntoFeatures` method. This method reads Variant Call Format (VCF) files annotated by ANNOVAR and creates a matrix containing information on variants per gene. The matrix is returned as a NumPy ndarray.
 
@@ -146,7 +146,7 @@ By following these steps, we ensure that the data is processed consistently and 
 
 ---
 
-## 4. Setting Up the Federated Learning Repository
+## Setting Up the Federated Learning Repository
 
 To run FedCrohn, a federated learning system designed for Crohn's disease prediction, it's recommended to use Miniconda for managing the Python environment and dependencies. Follow the steps below to set up the environment:
 
@@ -246,7 +246,7 @@ Experiment 1 involves running FedCrohn in a client-server setup with three datas
      python flClient.py 2
      ```
      
-## 5. Initiating the Simulation
+## Initiating the Simulation
 
 ### Experiment 1 Workflow (Fedrated)
 

@@ -19,9 +19,7 @@ By the end of this tutorial, you will:
 - Set up a federated learning pipeline.
 - Train a simple neural network on distributed data.
 
----
-
-# File Structure
+### File Structure
 
 The tutorial is structured into three key scripts:
 
@@ -31,7 +29,8 @@ The tutorial is structured into three key scripts:
 
 ---
 
-# Components in Detail
+## Client.py
+
 
 The `client.py` file defines the client-side logic for a federated learning setup using the Flower (FL) framework. Here's a detailed breakdown of the code:
 
@@ -168,6 +167,7 @@ if __name__ == "__main__":
 This client code allows for distributed model training across multiple clients in a federated learning setup. Each client trains locally on its data and communicates updates to a central server.
 
 
+## Server.py
 
 The code in the file `server.py` is a server-side implementation for federated learning using the Flower (FL) framework. Here's a breakdown of the code:
 
@@ -290,6 +290,7 @@ if __name__ == "__main__":
 4. **Model Saving**: Final trained model is saved as `model.pt` for later use or sharing.
 
 
+## Utils.py
 
 The `utils.py` file contains utility functions and classes to support the main federated learning process defined in the `server.py` file. Here is an explanation of its components:
 
