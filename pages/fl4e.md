@@ -5,7 +5,7 @@ page_id: fl4e
 search_exclude: false
 ---
 
-The paper "Federated Learning for Everyone (FL4E)" presents a new approach to improve collaboration in clinical research using federated learning. Here's a simplified explanation:
+The paper "Federated Learning for Everyone (FL4E)" presents a new approach to improve collaboration in clinical research using federated learning, [link for the paper](https://formative.jmir.org/2024/1/e55496). Here's a simplified explanation:
 
 ## Overview 
 ### Short Summary

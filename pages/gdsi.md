@@ -5,7 +5,7 @@ page_id: gdsi
 search_exclude: false
 ---
 
-The paper "The Journey of Data Within a Global Data Sharing Initiative: A Federated 3-Layer Data Analysis Pipeline to Scale Up Multiple Sclerosis Research" describes an advanced method for collecting and analyzing data related to multiple sclerosis (MS) on a global scale. Here's a simplified explanation:
+The paper "The Journey of Data Within a Global Data Sharing Initiative: A Federated 3-Layer Data Analysis Pipeline to Scale Up Multiple Sclerosis Research" describes an advanced method for collecting and analyzing data related to multiple sclerosis (MS) on a global scale, [link for the paper](https://medinform.jmir.org/2023/1/e48030/). Here's a simplified explanation:
 
 ## Overview 
 ### Short Summary
