@@ -1,21 +1,17 @@
 subitems:
 #  - title: Home
 #    url: /index
-  - title: WiNGS
+  - title: WiNGS API Tutorial
     url: /WiNGS
-  - title: FL IBD
+  - title: Inflammatory Bowel Disease Study with Federated Learning 
     url: /FL_IBD
-  - title: Federated Learning Client
-    url: /federated-learning-client
-  - title: Federated Learning Server
-    url: /federated-learning-server
-  - title: Federated Learning Utils
-    url: /federated-learning-utils
+  - title: Federated Learning Hands on Tutorial
+    url: /federated_learning_pipeline
   - title: Federated Learning 4 Everyone
     url: /fl4e
-  - title: FLMS
+  - title: Predicting Disability Progression in Multiple Sclerosis Using Federated Learning
     url: /flms
-  - title: Global Data Sharing Initiative
+  - title: COVID-19 in People with Multiple Sclerosis; A Global Data Sharing Initiative
     url: /gdsi
 
   - title: All tools and resources
