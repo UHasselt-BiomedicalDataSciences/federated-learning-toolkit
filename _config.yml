@@ -18,7 +18,7 @@ COC_EMAIL: lotte.geys@uhasselt.be
 RDM_KIT_REPO: https://github.com/elixir-europe/rdmkit
 RDM_KIT_WEBSITE: https://rdmkit.elixir-europe.org
 
-remote_theme: ELIXIR-Belgium/elixir-toolkit-theme@3.2.0
+remote_theme: ELIXIR-Belgium/elixir-toolkit-theme@4.2.0
 
 sass:
   style: compressed

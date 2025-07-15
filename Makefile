@@ -6,8 +6,7 @@ install:
 dev:
 	JEKYLL_BUILD_BRANCH=$$(git rev-parse --abbrev-ref HEAD) \
 	JEKYLL_ENV=development \
-	bundle exec jekyll serve --livereload --incremental
-
+	bundle exec jekyll serve --livereload --incremental --trace
 .PHONY: build
 build:
 	JEKYLL_ENV=production bundle exec jekyll build

@@ -1,12 +1,16 @@
 source "https://rubygems.org"
 
-gem "elixir-toolkit-theme-plugins", "~> 0.1.9"
-gem "webrick", "~> 1.7"
-gem "jekyll", "~> 4.3.2"
+gem "elixir-toolkit-theme-plugins", "~> 0.1.10"
+gem "webrick", "~> 1.9.1"
+gem "jekyll", "~> 4.4.1"
 gem "jemoji", "~> 0.13.0"
 gem "kramdown-parser-gfm", "~> 1.1"
 gem 'jekyll-octicons'
+gem "csv", "~> 3.3.5" # This is required when using ruby >= 3.3
 
+# Hack: fix the version so no deprecation warnings are emited.
+#       We have to wait until tollkit theme bumps up bootstrap version
+gem "sass-embedded", "~> 1.63.6"
 
 group :jekyll_plugins do
   gem "jekyll-redirect-from", "~> 0.16.0"
